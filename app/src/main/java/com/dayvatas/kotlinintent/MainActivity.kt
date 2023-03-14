@@ -13,6 +13,30 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+
+        println("onCreate Called")
+    }
+    override fun onResume(){
+        super.onResume()
+        println("onResume Called")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        println("onPause Called")
+
+    }
+
+    override fun onStop() {
+        super.onStop()
+        println("onStop Called")
+
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        println("onDestroy Called")
+
     }
 
     fun next(view : View){
