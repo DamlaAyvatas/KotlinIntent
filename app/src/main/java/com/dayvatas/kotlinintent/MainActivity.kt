@@ -44,5 +44,6 @@ class MainActivity : AppCompatActivity() {
         intent.putExtra("username", binding.userNameText.text.toString())
         intent.putExtra("name", binding.nameText.text.toString())
         startActivity(intent)
+        finish()
     }
 }
